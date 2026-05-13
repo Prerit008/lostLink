@@ -8,7 +8,7 @@ import dotenv from 'dotenv'
 
 
 import userRoutes from './routes/userRoutes.js'
-import ItemRoutes from './routes/ItemRoutes.js'
+import itemRoutes from './routes/itemRoutes.js'
 
 
 const app = express()
@@ -37,7 +37,7 @@ app.use((_req, res, next) => {
 
 app.use('/users', userRoutes)
 
-app.use('/Items', ItemRoutes)
+app.use('/Items', itemRoutes)
 
 
 const port = process.env.PORT || 5000;
